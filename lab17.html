@@ -1,0 +1,48 @@
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script type='text/javascript'>
+        var a = prompt('Введите первую сторону');
+        var b = prompt('Введите вторую сторону');
+        var c = prompt('Введите третью сторону');
+        var d = prompt('Введите первый угол ');
+        var e = prompt('Введите второй угол ');
+        var f = prompt('Введите третий угол ');
+        var h = prompt('Введите высоту треугольника ');
+        var n = prompt('Введите номер действия \n 1 по длинам трех сторон \n 2 по трем углам и стороне \n 3 по двум сторонам и углу между ними \n 4 по двум сторонам и необразованному ими углу \n 5 по высоте треугольника и стороне к которой опущена эта высота \n ');
+        var p = (a+b+c)/2;
+        if ((a+b) < c){
+            alert("треугольник не существует ");
+        } else {
+            if ((a+c) < b){
+            alert("треугольник не существует ");
+        } else{
+            if ((b+c) < a){
+            alert("треугольник не существует ");
+        }else{
+            switch(n){
+            case 1:  
+            alert("ответ: " + (Math.sqrt(p*(p-a)*(p-b)*(p-c))));
+            break
+            case 2:  
+            alert("ответ: " + ((Math.pow(a,2)*Math.sin(d*Math.PI/180)*Math.sin(e*Math.PI/180))/(2*Math.sin(f*Math.PI/180))));
+            break
+            case 3:  
+            alert("ответ: " + ((a*b*Math.sin(d*Math.PI/180))/2));
+            break
+            case 4:  
+            alert("ответ: " + );
+            break
+            case 5:  
+            alert("ответ: " + ((a*h)/2));
+            break
+        }
+        }
+        }
+        }
+    </script>
+</body>
+
+</html>
